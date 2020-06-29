@@ -84,7 +84,7 @@ public class Perceptron {
                     conterro++;
                     auxerro = dj[i] - Y[i];
                     //************************for para atualizar os pesos**********************
-                    //******funÃ§Ã£o de atualização de peso: w[t+1] = w[t] + eta * erro * x[t]***
+                    //******função de atualização de peso: w[t+1] = w[t] + eta * erro * x[t]***
                     System.out.printf("*********CORREÃ‡ÃƒO*************\n"); 
                     for(int j = 0; j < peso.length; j++){
                         //x0 sendo 1

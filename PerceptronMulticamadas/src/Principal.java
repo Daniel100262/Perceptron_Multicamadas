@@ -5,7 +5,10 @@ public class Principal {
    
 	public static void main(String[] args) {
          
-		int escolha = Integer.parseInt(JOptionPane.showInputDialog("O que voce deseja treinar?\n\n 1) - AND\n 2) - OR\n 3) - XOR\n 4) - Letra A ou T\n 0) - Sair"));
+		int escolha = Integer.parseInt(JOptionPane.showInputDialog(
+			"O que voce deseja treinar?\n\n 1) - "
+		+ "	AND\n 2) - OR\n 3) - XOR\n 4) - Letra A ou T\n 0) - Sair"
+			));
         
         switch(escolha){
             
@@ -105,32 +108,32 @@ public class Principal {
                 p3_3.atualizarY(entradasp3);
                 p3_3.treinar(entradasp3, dj3_3, 0.2);
                 
-                //************NEURÔNIO DE MULTICAMADAS**********************
+                //************NEUR�NIO DE MULTICAMADAS**********************
                 
                 System.out.println("******************************");
                 int x1[] = {0,0};
                 int rx1_1 = ativacaoY(p3_1.somatorio(x1));
                 int rx1_2 = ativacaoY(p3_2.somatorio(x1));
                 int ex1[] = {rx1_1,rx1_2};
-                System.out.println("Saída para 0,0: "+ativacaoY(p3_3.somatorio(ex1)));
+                System.out.println("Saida para 0,0: "+ativacaoY(p3_3.somatorio(ex1)));
                 
                 int x2[] = {1,0};
                 int rx2_1 = ativacaoY(p3_1.somatorio(x2));
                 int rx2_2 = ativacaoY(p3_2.somatorio(x2));
                 int ex2[] = {rx2_1,rx2_2};
-                System.out.println("Saída para 1,0: "+ativacaoY(p3_3.somatorio(ex2)));
+                System.out.println("Saida para 1,0: "+ativacaoY(p3_3.somatorio(ex2)));
                 
                 int x3[] = {0,1};
                 int rx3_1 = ativacaoY(p3_1.somatorio(x3));
                 int rx3_2 = ativacaoY(p3_2.somatorio(x3));
                 int ex3[] = {rx3_1,rx3_2};
-                System.out.println("Saída para 0,1: "+ativacaoY(p3_3.somatorio(ex3)));
+                System.out.println("Saida para 0,1: "+ativacaoY(p3_3.somatorio(ex3)));
                 
                 int x4[] = {1,1};
                 int rx4_1 = ativacaoY(p3_1.somatorio(x4));
                 int rx4_2 = ativacaoY(p3_2.somatorio(x4));
                 int ex4[] = {rx4_1,rx4_2};
-                System.out.println("Saída para 1,1: "+ativacaoY(p3_3.somatorio(ex4)));
+                System.out.println("Saida para 1,1: "+ativacaoY(p3_3.somatorio(ex4)));
                 
                 
                
